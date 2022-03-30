@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Evandson Dantas">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100&display=swap" rel="stylesheet">
+	  <link rel="stylesheet" href="estilo.css">
+	  <title>Termo Trick</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="https://term.ooo">Termo</a> Trick</h1>
+      <p>Complete as palavras nas box da mesma forma que estão no <a href="https://term.ooo" target="_blank">Termo</a>
+	  ou <a href="https://charada.vercel.app" target="_blank">Charada</a>.</p>
+    </header>
+    <main>
+      <div id="main">
+      <div id="game"  class="center">
+        <h2>Game</h2>
+      </div>
+      <div id="sugestion" class="center">
+        <h2>Informações</h2>
+        <p>Letras descartadas: <span id="outLetters"></span></p>
+        <p>Letras em posições erradas: <span id="wrongPosition"></span></p>
+        <p>Possibilidades: <span id="total">#</span></p>
+        <h2>Sugestões</h2>
+		<ol id="words"><li>-</li></ol>
+      </div>
+      </div>
+      <div id="keyboard">
+        <h2 class="onlymobile">Teclado</h2>
+        <div class="box green" data-codigo="1" title="Letra correta e posição certa">1</div>
+        <div class="box orange" data-codigo="2" title="Letra correta e posição errada">2</div>
+        <div class="box black" data-codigo="3" title="Letra errada">3</div>
+        <div class="box white" data-codigo="4" title="Apagar">&leftarrow;</div>
+        <div class="box white" data-codigo="5" title="Avaliar">&#9166;</div>
+        <div class="box white" data-codigo="6" title="Limpar">&#8634;</div>
+      </div>
+    </main>
+    <footer class="center">Desenvolvido por <a href="https://github.com/evndsn/" target="_blank">@evndsn</a> &#127773;</footer>
+    <script type="text/javascript" src="js/palavras.js"></script>
+    <script type="text/javascript" src="js/game.js"></script>
+  </body>
+</html>
