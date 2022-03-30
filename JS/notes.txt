@@ -1,0 +1,3 @@
+Files:
+1. game.js: contains the site funcionalities
+2. palavras.js: contains the portuguese words with 5 letters.
